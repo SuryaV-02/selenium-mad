@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_major_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kotlin Lover"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+
+        >
+        <Button
+            android:id="@+id/btn_color"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:text="change color"
+            android:paddingVertical="12dp"
+            android:backgroundTint="@color/black"
+            />
+        <Button
+            android:id="@+id/btn_size"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:text="change size"
+            android:paddingVertical="12dp"
+            android:backgroundTint="@color/black"
+            />
+    </LinearLayout>
+
+</LinearLayout>
